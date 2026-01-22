@@ -4,3 +4,6 @@ theme: minima
 
 # Your site URL (GitHub domain)
 url: "https://YOURUSERNAME.github.io"
+
+header_pages:
+  - about.md
