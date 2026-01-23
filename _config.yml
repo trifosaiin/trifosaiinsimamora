@@ -5,12 +5,13 @@ theme: minima
 minima:
   hide_site_feed_link: true
 
-
-# Your site URL (GitHub domain)
 url: "https://www.trifosasimamora.com"
 
 header_pages:
+  - index.md
   - about.md
+  - research.md
+  - publications.md
+  - teaching.md
   - cv.md
-  - photos.md
-  - posts.md
+  - fellowship.md
