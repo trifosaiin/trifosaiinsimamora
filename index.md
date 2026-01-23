@@ -8,9 +8,13 @@ permalink: /
   Trifosa Simamora
 </div>
 
-<div style="max-width:800px; margin:40px auto 0;">
-  My research examines the ecological impacts of renewable energy development on grassland bird and raptor communities across protected and working grasslands in New York State.
-This site contains my research background, CV, field documentation, and research posts.
+
+<div style="max-width:900px; margin:40px auto 0;">
+
+I am a Ph.D. candidate at Cornell University in the New York Cooperative Fish and Wildlife Research Unit.
+
+My current research focuses on the interaction between renewable energy development and grassland birds. My work integrates field surveys (point count, distance sampling, spot mapping), passive acoustic monitoring, and occupancy modeling to evaluate grassland bird community responses to landscape change. Through this research, I aim to contribute evidence-based management for renewable energy siting and wildlife conservation.
+
+This website brings together my research, publications, field work notes, and ongoing projects.
+
 </div>
-
-
