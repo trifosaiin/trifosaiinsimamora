@@ -9,10 +9,10 @@ url: "https://www.trifosasimamora.com"
 
 header_pages:
   - index.md
-  - about.md
   - research.md
   - publications.md
+  - posts.md
   - teaching.md
   - fellowship.md
-  - posts.md
   - cv.md
+  - about.md
