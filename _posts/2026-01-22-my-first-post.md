@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Post"
+title: "The making of this website"
 date: 2026-01-22
 categories: [notes]
 ---
