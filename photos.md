@@ -11,4 +11,4 @@ The walk to the field sites of grassland area in New York.
 ---
 ## Savannah Sparrow  
 ![Survey]({{ "/assets/images/photo2.JPG" | relative_url }})
-Savannah Sparrow at the top of passive acoustic monitor of SWIFT
+Savannah Sparrow at the top of the passive acoustic monitor of SWIFT unit.
