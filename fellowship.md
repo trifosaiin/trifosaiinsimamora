@@ -4,8 +4,12 @@ title: Fellowship
 permalink: /fellowship/
 ---
 
-# Graduate Resident Fellow - Carl L. Becker House
-- coming soon
+## Graduate Resident Fellow  
+*Carl L. Becker House, Cornell University*
 
-# Migration Graduate Student Fellow
-- coming soon
+Details coming soon.
+
+---
+
+## Migration Graduate Student Fellow  
+Details coming soon.
