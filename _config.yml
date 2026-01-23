@@ -1,9 +1,9 @@
-title: "Your Blog Title"
-description: "A short description of your blog."
+title: "Trifosa Simamora | Quantitative Ecology"
+description: "PhD Candidate in Natural Resources and Environment, Cornell University."
 theme: minima
 
 # Your site URL (GitHub domain)
-url: "https://YOURUSERNAME.github.io"
+url: "https://trifosaiin.github.io"
 
 header_pages:
   - about.md
