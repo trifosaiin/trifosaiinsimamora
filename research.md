@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-<p class="subtitle">Current projects and field work</p>
+<p class="subtitle">Current and past projects</p>
 
 ## Renewable Energy Ecology
 
