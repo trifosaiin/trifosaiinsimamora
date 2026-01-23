@@ -6,8 +6,8 @@ permalink: /photos/
 
 ## Field Work
 
-![Field photo](/assets/images/photo1.jpg)
+![Field photo](/assets/images/photo1.jpeg)
 
 ## Grassland Survey
 
-![Survey](/assets/images/photo2.jpg)
+![Survey](/assets/images/photo2.jpeg)
