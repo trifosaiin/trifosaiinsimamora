@@ -2,6 +2,10 @@ title: "Trifosa Simamora"
 description: "PhD Candidate in Natural Resources and Environment | Cornell University."
 theme: minima
 
+minima:
+  hide_site_feed_link: true
+
+
 # Your site URL (GitHub domain)
 url: "https://trifosaiin.github.io"
 
