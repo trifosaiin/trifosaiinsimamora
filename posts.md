@@ -4,9 +4,17 @@ title: Posts
 permalink: /posts/
 ---
 
-# Posts
-<p class="subtitle">Updates, field notes, and reflections</p>
+<p class="subtitle">Field updates, reflections, and research notes</p>
 
 {% for post in site.posts %}
-- **{{ post.date | date: "%b %d, %Y" }}** — [{{ post.title }}]({{ post.url | relative_url }})
+<div style="margin-bottom: 25px;">
+  <div style="font-size:14px; color:#666;">
+    {{ post.date | date: "%B %d, %Y" }}
+  </div>
+  <div style="font-size:20px; font-weight:600;">
+    <a href="{{ post.url | relative_url }}">
+      {{ post.title }}
+    </a>
+  </div>
+</div>
 {% endfor %}
