@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Still learning how to do research blog"
+title: "Blog?"
 date: 2026-01-25
 categories: [notes]
 ---
