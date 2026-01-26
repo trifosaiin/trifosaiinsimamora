@@ -4,7 +4,7 @@ permalink: /
 hero_bg: /assets/images/home-hero-bg.jpg
 hero_photo: /assets/images/home-portrait.jpg
 hero_title: TRIFOSA SIMAMORA
-hero_tagline: PhD Candidate | Natural Resources & Environment | Cornell University
+hero_tagline: Natural Resources & Environment | Cornell University
 ---
 
 I am a Ph.D. candidate at Cornell University in the New York Cooperative Fish and Wildlife Research Unit.
