@@ -139,3 +139,18 @@ body { overflow-x: hidden; }
     height: clamp(220px, 55vw, 320px);
   }
 }
+
+/* FORCE bio text white inside hero (beats Minima defaults) */
+.home-hero .home-hero__bio,
+.home-hero .home-hero__bio p,
+.home-hero .home-hero__bio a,
+.home-hero .home-hero__bio li,
+.home-hero .home-hero__bio span {
+  color: rgba(255,255,255,0.95) !important;
+}
+
+/* FORCE large avatar size */
+.home-hero img.home-hero__avatar {
+  width: clamp(360px, 32vw, 520px) !important;
+  height: clamp(360px, 32vw, 520px) !important;
+}
