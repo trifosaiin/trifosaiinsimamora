@@ -118,3 +118,17 @@
   .home-hero { padding-top: 6.5rem; }
 }
 
+/* --- small fixes --- */
+body { overflow-x: hidden; }
+
+.home-hero--fullbleed { overflow-x: clip; }
+
+.site-header {
+  position: relative;
+  z-index: 50;
+}
+
+/* Optional: move hero content upward */
+.home-hero { align-items: flex-start; }
+.home-hero__content { margin-top: 14vh; }
+
