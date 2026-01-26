@@ -66,7 +66,7 @@ body { overflow-x: hidden; }
 .home-hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.34);
+  background: rgba(0,0,0,0.18);
 }
 
 /* Content layer */
@@ -105,7 +105,7 @@ body { overflow-x: hidden; }
 }
 
 .home-hero__tagline {
-  margin: 0;
+  margin: 0 0 2rem; /* adds clear space under tagline */
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: clamp(0.85rem, 1.6vw, 1.1rem);
@@ -113,21 +113,27 @@ body { overflow-x: hidden; }
   text-shadow: 0 4px 18px rgba(0,0,0,0.55);
 }
 
-/* Bio text INSIDE hero */
 .home-hero__bio,
 .home-hero__bio p {
-  color: rgba(255,255,255,0.95);
+  color: rgba(255,255,255,0.97) !important;
   text-align: center;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  font-size: clamp(1rem, 1.2vw, 1.15rem);
-  line-height: 1.75;
-  text-shadow: 0 4px 18px rgba(0,0,0,0.55);
+
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.9;
+
+  text-shadow: 0 6px 22px rgba(0,0,0,0.75);
 }
 
-.home-hero__bio p {
-  margin: 0.85rem 0;
+/* Optional: gentle backing for readability */
+.home-hero__bio {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.18);
+  backdrop-filter: blur(2px);
 }
 
 /* Mobile spacing */
