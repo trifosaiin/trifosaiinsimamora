@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The making of this website"
-date: 2026-01-22
+title: "Still learning how to do research blog"
+date: 2026-01-25
 categories: [notes]
 ---
 
