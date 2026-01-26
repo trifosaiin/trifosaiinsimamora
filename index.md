@@ -7,4 +7,4 @@ hero_title: TRIFOSA SIMAMORA
 hero_tagline: Natural Resources & Environment | Cornell University
 ---
 
-I am a Ph.D. candidate at Cornell University in the New York Cooperative Fish and Wildlife Research Unit. My research focuses on the interaction between renewable energy development and grassland birds. I strive to contribute to the evidence-based management for renewable energy siting and wildlife conservation. This website brings together my research, publications, field work notes, and ongoing projects. 
+I am a Ph.D. candidate at Cornell University in the New York Cooperative Fish and Wildlife Research Unit. My research focuses on the interaction between renewable energy development and grassland birds. I strive to contribute to the evidence-based management for renewable energy siting and wildlife conservation. This website brings together my research, publications, field work notes, blogs, and ongoing projects. 
