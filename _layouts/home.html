@@ -22,13 +22,15 @@ layout: default
     {% elsif site.description %}
       <p class="home-hero__tagline">{{ site.description }}</p>
     {% endif %}
-  </div>
-</section>
 
-<main class="page-content home-intro" aria-label="Content">
-  <div class="wrapper">
-    <div class="home-intro__text">
+    <!-- NEW: bio text inside hero -->
+    <div class="home-hero__bio">
       {{ content }}
     </div>
   </div>
+</section>
+
+<!-- Optional: keep this empty or remove it entirely -->
+<main class="page-content" aria-label="Content">
+  <div class="wrapper"></div>
 </main>
