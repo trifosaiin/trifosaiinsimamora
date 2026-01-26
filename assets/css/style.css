@@ -66,7 +66,7 @@ body { overflow-x: hidden; }
 .home-hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.18);
+  background: rgba(0,0,0,0.10);
 }
 
 /* Content layer */
@@ -120,7 +120,7 @@ body { overflow-x: hidden; }
   padding: 0.75rem 1rem;
   border-radius: 10px;
 
-  background: rgba(0,0,0,0.18);
+  background: rgba(0,0,0,0.24);
   backdrop-filter: blur(2px);
 }
 
