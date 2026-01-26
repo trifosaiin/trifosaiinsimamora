@@ -2,20 +2,21 @@
 layout: default
 ---
 
-{% comment %}
-Home hero layout (only used when index.md sets layout: home)
-Uses front matter:
-- hero_bg
-- hero_photo
-- hero_title
-- hero_tagline
-{% endcomment %}
-
-<section class="home-hero" style="background-image: url('{{ page.hero_bg | relative_url }}');">
+<section class="home-hero home-hero--fullbleed" style="background-image: url('{{ page.hero_bg | relative_url }}');">
   <div class="home-hero__overlay"></div>
 
   <div class="home-hero__content">
+    {% if page.hero_photo %}
+      <img
+        class="home-hero__avatar"
+        src="{{ page.hero_photo | relative_url }}"
+        alt="{{ page.hero_title | default: site.title }}"
+        loading="lazy"
+      />
+    {% endif %}
+
     <h1 class="home-hero__title">{{ page.hero_title | default: site.title }}</h1>
+
     {% if page.hero_tagline %}
       <p class="home-hero__tagline">{{ page.hero_tagline }}</p>
     {% elsif site.description %}
@@ -23,19 +24,6 @@ Uses front matter:
     {% endif %}
   </div>
 </section>
-
-{% if page.hero_photo %}
-  <section class="home-feature">
-    <div class="home-feature__wrap">
-      <img
-        class="home-feature__img"
-        src="{{ page.hero_photo | relative_url }}"
-        alt="{{ page.hero_title | default: site.title }}"
-        loading="lazy"
-      />
-    </div>
-  </section>
-{% endif %}
 
 <main class="page-content home-intro" aria-label="Content">
   <div class="wrapper">
