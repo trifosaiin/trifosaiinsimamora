@@ -14,15 +14,17 @@ layout: default
         loading="lazy"
       />
     {% endif %}
+    
+<div class="home-hero__nameband">
+  <h1 class="home-hero__title">{{ page.hero_title | default: site.title }}</h1>
 
-    <h1 class="home-hero__title">{{ page.hero_title | default: site.title }}</h1>
-
-    {% if page.hero_tagline %}
-      <p class="home-hero__tagline">{{ page.hero_tagline }}</p>
-    {% elsif site.description %}
-      <p class="home-hero__tagline">{{ site.description }}</p>
-    {% endif %}
-
+  {% if page.hero_tagline %}
+    <p class="home-hero__tagline">{{ page.hero_tagline }}</p>
+  {% elsif site.description %}
+    <p class="home-hero__tagline">{{ site.description }}</p>
+  {% endif %}
+</div>
+   
     <div class="home-hero__bio">
       {{ content }}
     </div>
