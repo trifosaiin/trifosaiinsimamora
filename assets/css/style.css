@@ -26,6 +26,14 @@
   margin: 30px 0 20px;
 }
 
+/* --- small fixes --- */
+body { overflow-x: hidden; }
+
+.site-header {
+  position: relative;
+  z-index: 50;
+}
+
 /* =========================
    FULL-PAGE HERO + CIRCULAR PORTRAIT
    ========================= */
@@ -35,23 +43,26 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  overflow-x: clip;
 }
 
 /* Full-page hero */
 .home-hero {
   position: relative;
-  min-height: 100vh;           /* full viewport height */
+  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+
+  /* Put content in upper-middle (not perfectly centered) */
+  align-items: flex-start;
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* adjust to center 35% if needed */
-  padding: 6rem 1.25rem 4rem;  /* space for header + breathing room */
+  background-position: center;
+  padding: 6rem 1.25rem 4rem;
 }
 
-/* Darker overlay (~50% stronger than before) */
+/* Overlay (currently set to 0.34 = lighter) */
 .home-hero__overlay {
   position: absolute;
   inset: 0;
@@ -64,19 +75,21 @@
   z-index: 1;
   text-align: center;
   max-width: 1100px;
+  margin-top: 14vh; /* adjust 10–18vh to move up/down */
 }
 
+/* BIG circular portrait */
 .home-hero__avatar {
-  width: clamp(220px, 26vw, 420px);
-  height: clamp(220px, 26vw, 420px);
+  width: clamp(360px, 32vw, 520px);
+  height: clamp(360px, 32vw, 520px);
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
   display: block;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 2rem;
 
-  border: 4px solid rgba(255,255,255,0.9);
-  box-shadow: 0 16px 50px rgba(0,0,0,0.5);
+  border: 4px solid rgba(255,255,255,0.95);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.55);
 }
 
 /* Title + tagline readability */
@@ -87,7 +100,7 @@
   text-transform: uppercase;
   font-size: clamp(2.2rem, 5vw, 4.6rem);
   line-height: 1.05;
-  color: #fff !important;
+  color: #fff;
   text-shadow: 0 6px 22px rgba(0,0,0,0.65);
 }
 
@@ -96,72 +109,14 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: clamp(0.85rem, 1.6vw, 1.1rem);
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255,255,255,0.9);
   text-shadow: 0 4px 18px rgba(0,0,0,0.55);
 }
 
-/* Intro text below hero */
-.home-intro {
-  padding-top: 2rem;
-}
-
-.home-intro__text {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.75;
-}
-
-/* Mobile spacing */
-@media (max-width: 600px) {
-  .home-hero { padding-top: 6.5rem; }
-}
-
-/* --- small fixes --- */
-body { overflow-x: hidden; }
-
-.home-hero--fullbleed { overflow-x: clip; }
-
-.site-header {
-  position: relative;
-  z-index: 50;
-}
-
-/* Optional: move hero content upward */
-.home-hero { align-items: flex-start; }
-.home-hero__content { margin-top: 14vh; }
-
-.home-hero__bio {
-  margin: 1.25rem auto 0;
-  max-width: 900px;
-  color: rgba(255,255,255,0.92);
-  font-size: clamp(1rem, 1.15vw, 1.15rem);
-  line-height: 1.75;
-  text-shadow: 0 3px 14px rgba(0,0,0,0.55);
-}
-
-/* Make paragraphs inside the bio breathe nicely */
-.home-hero__bio p {
-  margin: 0.85rem 0;
-}
-
-/* === FORCE LARGE HERO AVATAR (override all previous rules) === */
-.home-hero__avatar {
-  width: clamp(360px, 32vw, 520px) !important;
-  height: clamp(360px, 32vw, 520px) !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  display: block !important;
-  margin: 0 auto 2rem !important;
-
-  border: 4px solid rgba(255,255,255,0.95) !important;
-  box-shadow: 0 18px 60px rgba(0,0,0,0.55) !important;
-}
-
-/* === FORCE HERO BIO TEXT TO BE WHITE === */
+/* Bio text INSIDE hero */
 .home-hero__bio,
 .home-hero__bio p {
-  color: rgba(255,255,255,0.95) !important;
+  color: rgba(255,255,255,0.95);
   text-align: center;
   max-width: 900px;
   margin-left: auto;
@@ -171,3 +126,16 @@ body { overflow-x: hidden; }
   text-shadow: 0 4px 18px rgba(0,0,0,0.55);
 }
 
+.home-hero__bio p {
+  margin: 0.85rem 0;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+  .home-hero { padding-top: 6.5rem; }
+  .home-hero__content { margin-top: 10vh; }
+  .home-hero__avatar {
+    width: clamp(220px, 55vw, 320px);
+    height: clamp(220px, 55vw, 320px);
+  }
+}
