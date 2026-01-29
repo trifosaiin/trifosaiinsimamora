@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Being human"
+date: 2026-01-29
+---
+
 - a poetry -
   
 Being human is being vulnerable  
