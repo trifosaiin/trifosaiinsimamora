@@ -19,3 +19,7 @@ I am looking at the interaction between grassland birds and renewable energy exp
 - Occupancy models
 - Acoustic monitoring
 - Spatial analysis
+
+
+## Link to my GitHub Page
+- [My GitHub](https://github.com/trifosaiin)
