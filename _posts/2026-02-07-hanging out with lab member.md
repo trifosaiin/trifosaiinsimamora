@@ -1,7 +1,8 @@
 ---
-title: "Lab Hangout"
-type: [post]
-
+layout: post
+title: "Hanging out with Lab member"
+date: 2026-02-07
+categories: [notes]
 ---
 
 Yesterday night I was in lab hangout!  
