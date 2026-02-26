@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TThe 1st podcast experience"
+title: "The 1st podcast experience"
 date: 2026-02-06
 categories: [notes]
 ---
