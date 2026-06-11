@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div id="protected-content" style="display:none">
+  {{ content }}
+</div>
+
+<div id="password-gate" style="text-align:center; margin-top: 4rem;">
+  <h3>🔒 This post is private</h3>
+  <p>Enter the password to read it.</p>
+  <input type="password" id="pw-input" placeholder="Password" 
+    style="padding: 0.5rem 1rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px;" />
+  <button onclick="checkPassword()" 
+    style="margin-left: 0.5rem; padding: 0.5rem 1rem; cursor:pointer;">
+    Enter
+  </button>
+  <p id="pw-error" style="color:red; display:none;">Wrong password. Try again.</p>
+</div>
+
+<script>
+  const CORRECT_HASH = "{{ page.password_hash }}";
+
+  async function checkPassword() {
+    const input = document.getElementById("pw-input").value;
+    const encoder = new TextEncoder();
+    const data = encoder.encode(input);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+
+    if (hashHex === CORRECT_HASH) {
+      document.getElementById("password-gate").style.display = "none";
+      document.getElementById("protected-content").style.display = "block";
+      sessionStorage.setItem("unlocked_" + window.location.pathname, "true");
+    } else {
+      document.getElementById("pw-error").style.display = "block";
+    }
+  }
+
+  if (sessionStorage.getItem("unlocked_" + window.location.pathname) === "true") {
+    document.getElementById("password-gate").style.display = "none";
+    document.getElementById("protected-content").style.display = "block";
+  }
+
+  document.getElementById("pw-input").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") checkPassword();
+  });
+</script>
